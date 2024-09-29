@@ -1,10 +1,10 @@
 # Step 1: Build the React application
 FROM node:20 AS build
 
-ARG VITE_BACKEND_API_URL="http://localhost:8000"
+ARG VITE_BACKEND_API_URL="https://ucanaigraphbackend-162421115459.us-central1.run.app"
 ARG VITE_REACT_APP_SOURCES=""
 ARG VITE_LLM_MODELS=""
-ARG VITE_GOOGLE_CLIENT_ID=""
+ARG VITE_GOOGLE_CLIENT_ID="162421115459-f81shjudj8hgdnulpkdm8jt87t49nj0k.apps.googleusercontent.com"
 ARG VITE_BLOOM_URL="https://workspace-preview.neo4j.io/workspace/explore?connectURL={CONNECT_URL}&search=Show+me+a+graph&featureGenAISuggestions=true&featureGenAISuggestionsInternal=true"
 ARG VITE_TIME_PER_PAGE=50
 ARG VITE_LARGE_FILE_SIZE=5242880
